@@ -5,7 +5,7 @@ set cpo&vim
 let s:info = {}
 
 
-function! presetbundle#info#get()
+function! bundle_preset#info#get()
 	return s:info
 endfunction
 
