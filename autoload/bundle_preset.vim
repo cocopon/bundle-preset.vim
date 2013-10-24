@@ -12,8 +12,8 @@ endfunction
 
 function! s:bundle(repository)
 	let name = s:repository_name(a:repository)
-	let info = bundle_preset#info#get()
-	return get(info, name, {})
+	let data = bundle_preset#data#get()
+	return get(data, name, {})
 endfunction
 
 function! bundle_preset#is_lazy(repository)

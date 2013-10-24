@@ -2,16 +2,16 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 
-let s:info = {}
+let s:data = {}
 
 
-function! bundle_preset#info#get()
-	return s:info
+function! bundle_preset#data#get()
+	return s:data
 endfunction
 
 
 " C {{{
-let s:info['camelcasemotion'] = {
+let s:data['camelcasemotion'] = {
 			\ 	'lazy': 1,
 			\ 	'options': {
 			\ 		'autoload': {
@@ -21,7 +21,7 @@ let s:info['camelcasemotion'] = {
 			\ }
 " }}}
 " J {{{
-let s:info['jedi-vim'] = {
+let s:data['jedi-vim'] = {
 			\ 	'lazy': 1,
 			\ 	'options': {
 			\ 		'autoload': {
@@ -31,7 +31,7 @@ let s:info['jedi-vim'] = {
 			\ }
 " }}}
 " O {{{
-let s:info['open-browser'] = {
+let s:data['open-browser'] = {
 			\ 	'lazy': 1,
 			\ 	'options': {
 			\ 		'autoload': {
@@ -41,7 +41,7 @@ let s:info['open-browser'] = {
 			\ }
 " }}}
 " R {{{
-let s:info['restart.vim'] = {
+let s:data['restart.vim'] = {
 			\ 	'lazy': 1,
 			\ 	'options': {
 			\ 		'gui': 1,
@@ -52,7 +52,7 @@ let s:info['restart.vim'] = {
 			\ }
 " }}}
 " T {{{
-let s:info['thumbnail.vim'] = {
+let s:data['thumbnail.vim'] = {
 			\ 	'lazy': 1,
 			\ 	'options': {
 			\ 		'autoload': {
@@ -62,7 +62,7 @@ let s:info['thumbnail.vim'] = {
 			\ }
 " }}}
 " U {{{
-let s:info['unite-colorscheme'] = {
+let s:data['unite-colorscheme'] = {
 			\ 	'lazy': 1,
 			\ 	'options': {
 			\ 		'gui': 1,
@@ -71,7 +71,7 @@ let s:info['unite-colorscheme'] = {
 			\ 		}
 			\ 	}
 			\ }
-let s:info['unite-font'] = {
+let s:data['unite-font'] = {
 			\ 	'lazy': 1,
 			\ 	'options': {
 			\ 		'gui': 1,
@@ -82,7 +82,7 @@ let s:info['unite-font'] = {
 			\ }
 " }}}
 " V {{{
-let s:info['vesting'] = {
+let s:data['vesting'] = {
 			\ 	'lazy': 1,
 			\ 	'options': {
 			\ 		'autoload': {
@@ -90,7 +90,7 @@ let s:info['vesting'] = {
 			\ 		}
 			\ 	}
 			\ }
-let s:info['vimproc'] = {
+let s:data['vimproc'] = {
 			\ 	'lazy': 0,
 			\ 	'options': {
 			\ 		'build': {
@@ -100,7 +100,7 @@ let s:info['vimproc'] = {
 			\ 		}
 			\ 	}
 			\ }
-let s:info['vim-qfreplace'] = {
+let s:data['vim-qfreplace'] = {
 			\ 	'lazy': 1,
 			\ 	'options': {
 			\ 		'autoload': {
@@ -108,7 +108,7 @@ let s:info['vim-qfreplace'] = {
 			\ 		}
 			\ 	}
 			\ }
-let s:info['vim-ref'] = {
+let s:data['vim-ref'] = {
 			\ 	'lazy': 1,
 			\ 	'options': {
 			\ 		'autoload': {
@@ -118,7 +118,7 @@ let s:info['vim-ref'] = {
 			\ }
 " }}}
 " W {{{
-let s:info['w3m.vim'] = {
+let s:data['w3m.vim'] = {
 			\ 	'lazy': 1,
 			\ 	'options': {
 			\ 		'autoload': {
