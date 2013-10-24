@@ -14,7 +14,9 @@ endfunction
 let s:info['camelcasemotion'] = {
 			\ 	'lazy': 1,
 			\ 	'options': {
-			\ 		'mappings': '<Plug>CamelCaseMption_'
+			\ 		'autoload': {
+			\ 			'mappings': '<Plug>CamelCaseMotion_'
+			\ 		}
 			\ 	}
 			\ }
 " }}}
@@ -32,7 +34,9 @@ let s:info['jedi-vim'] = {
 let s:info['open-browser'] = {
 			\ 	'lazy': 1,
 			\ 	'options': {
-			\ 		'mappings': '<Plug>(openbrowser-'
+			\ 		'autoload': {
+			\ 			'mappings': '<Plug>(openbrowser-'
+			\ 		}
 			\ 	}
 			\ }
 " }}}
@@ -99,7 +103,9 @@ let s:info['vimproc'] = {
 let s:info['vim-qfreplace'] = {
 			\ 	'lazy': 1,
 			\ 	'options': {
-			\ 		'filetypes': ['unite', 'quickfix']
+			\ 		'autoload': {
+			\ 			'filetypes': ['unite', 'quickfix']
+			\ 		}
 			\ 	}
 			\ }
 let s:info['vim-ref'] = {
