@@ -5,8 +5,13 @@ set cpo&vim
 let s:data = {}
 
 
-function! bundle_preset#data#get()
-	return s:data
+function! s:repository_name(repository)
+	return fnamemodify(a:repository, ':t')
+endfunction
+
+function! bundle_preset#data#get(repository)
+  let name = s:repository_name(a:repository)
+	return get(s:data, name, {})
 endfunction
 
 

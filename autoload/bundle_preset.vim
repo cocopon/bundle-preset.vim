@@ -6,24 +6,14 @@ function! bundle_preset#rc()
 	command! -nargs=1 PresetBundle call bundle_preset#bundle(<args>)
 endfunction
 
-function! s:repository_name(repository)
-	return fnamemodify(a:repository, ':t')
-endfunction
-
-function! s:bundle(repository)
-	let name = s:repository_name(a:repository)
-	let data = bundle_preset#data#get()
-	return get(data, name, {})
-endfunction
-
 function! bundle_preset#is_lazy(repository)
-	let bundle = s:bundle(a:repository)
-	return empty(bundle) ? 0 : bundle.lazy
+	let package = bundle_preset#data#get(a:repository)
+	return empty(package) ? 0 : package.lazy
 endfunction
 
 function! bundle_preset#options(repository)
-	let bundle = s:bundle(a:repository)
-	return empty(bundle) ? {} : bundle.options
+	let package = bundle_preset#data#get(a:repository)
+	return empty(package) ? {} : package.options
 endfunction
 
 function! bundle_preset#bundle(repository)
