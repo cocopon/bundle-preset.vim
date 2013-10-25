@@ -109,7 +109,7 @@ let s:data['vim-qfreplace'] = {
 			\ 	'lazy': 1,
 			\ 	'options': {
 			\ 		'autoload': {
-			\ 			'filetypes': ['unite', 'quickfix']
+			\ 			'filetypes': ['qf', 'unite']
 			\ 		}
 			\ 	}
 			\ }
