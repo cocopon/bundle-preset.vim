@@ -36,7 +36,7 @@ let s:data['jedi-vim'] = {
 			\ }
 " }}}
 " O {{{
-let s:data['open-browser'] = {
+let s:data['open-browser.vim'] = {
 			\ 	'lazy': 1,
 			\ 	'options': {
 			\ 		'autoload': {
