@@ -122,6 +122,16 @@ let s:data['vim-ref'] = {
 			\ 	}
 			\ }
 " }}}
+" V {{{
+let s:data['vim-vimlint'] = {
+			\ 	'options': {
+			\ 		'depends': 'ynkdir/vim-vimlparser',
+			\ 		'autoload': {
+			\ 			'functions': 'vimlint#vimlint'
+			\ 		}
+			\ 	}
+			\ }
+" }}}
 " W {{{
 let s:data['w3m.vim'] = {
 			\ 	'lazy': 1,
