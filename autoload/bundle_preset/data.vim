@@ -45,6 +45,17 @@ let s:data['open-browser.vim'] = {
 			\ 	}
 			\ }
 " }}}
+" P {{{
+let s:data['previm'] = {
+			\ 	'lazy': 1,
+			\ 	'options': {
+			\ 		'depends': 'tyru/open-browser.vim',
+			\ 		'autoload': {
+			\ 			'commands': 'PrevimOpen'
+			\ 		}
+			\ 	}
+			\ }
+" }}}
 " R {{{
 let s:data['restart.vim'] = {
 			\ 	'lazy': 1,
